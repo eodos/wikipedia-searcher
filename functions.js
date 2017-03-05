@@ -7,7 +7,7 @@ function requestArticles(keywork) {
 				var title = data.query.pages[page].title
 				var url = data.query.pages[page].fullurl;
 				var extract = data.query.pages[page].extract.replace(/<[^>]*>/gi,"");
-				$("#articles").append("<li class='article'><a href='" + url + "' target='_blank'><h5>" + title + "</h5>" + extract + "</li></a>");
+				$("#articles").append("<li class='article'><a href='" + url + "' target='_blank'><h4>" + title + "</h4>" + extract + "</li></a>");
 			}
 		}
 	});
